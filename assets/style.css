@@ -1,23 +1,42 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
 
 body{
   margin: 0;
-  font-family: sans-serif;
 }
 .wrap{
   max-width: 120ch;
   min-height: 100vh;
   margin: 0 auto;
+  font-family: sans-serif;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
   background-color: #f5f5f5;
 }
+/*---*/
 .logo{
   flex: 1 1 40ch;
-  align-self: start;
+  align-self: stretch;
+  background: url("mybg.jpg") center top / cover, #293214;
 }
+.logo p{
+  text-align: center;
+  background-color: #00000060;
+  padding: 0.5rem 0;
+  margin: 30vh 0 0 0;
+  color: #fff;
+}
+.logo span, .logo img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.logo span{
+  font: 5rem "Ruslan Display", sans-serif;
+  letter-spacing: -6px;
+  margin-top: 1rem;
+}
+/*---*/
 .form{
   flex: 2 1 80ch;
 }
