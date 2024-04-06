@@ -1,0 +1,23 @@
+
+
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+.wrap{
+  max-width: 120ch;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+.logo{
+  flex: 1 1 40ch;
+  align-self: start;
+}
+.form{
+  flex: 2 1 80ch;
+}
