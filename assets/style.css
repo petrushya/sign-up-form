@@ -105,6 +105,7 @@ button{
   box-shadow: 2px 2px 3px #a9a9a9;
   font-weight: bold;
   font-size: inherit;
+  caret-color: transparent;
   color: #fff;
 }
 
