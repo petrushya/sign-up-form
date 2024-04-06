@@ -4,8 +4,9 @@ body{
   margin: 0;
 }
 .wrap{
-  max-width: 120ch;
-  min-height: 100vh;
+  --inline-gap: calc(1ch + 3vw);
+  max-inline-size: 120ch;
+  min-block-size: 100vh;
   margin: 0 auto;
   font-family: sans-serif;
   display: flex;
@@ -13,6 +14,14 @@ body{
   justify-content: flex-start;
   align-items: center;
   background-color: #f5f5f5;
+}
+p{
+  margin: 0 0 1.5rem var(--inline-gap);
+}
+a{
+  text-decoration: unset;
+  font-weight: bold;
+  color: #293214;
 }
 /*---*/
 .logo{
@@ -34,9 +43,83 @@ body{
 .logo span{
   font: 5rem "Ruslan Display", sans-serif;
   letter-spacing: -6px;
-  margin-top: 1rem;
+  margin-block-start: 1rem;
 }
 /*---*/
 .form{
   flex: 2 1 80ch;
 }
+section{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: start;
+  column-gap: var(--inline-gap);
+  padding: 1rem var(--inline-gap);
+  background-color: #fff;
+  box-shadow: 0 2px 3px #a9a9a9;
+}
+section h2, section p{
+  flex: 1 1 100%;
+  margin: 0.5rem 0 0 0;
+}
+section div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  margin-block-start: 1.5rem;
+}
+label{
+  font-variant: small-caps;
+  letter-spacing: 0.2ch;
+}
+input{
+  display: border-box;
+  inline-size: 30ch;
+  border: thin solid #000;
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  font-size: inherit;
+}
+input:focus{
+  border-color: #00f;
+  box-shadow: 2px 2px 3px #a9a9a9;
+  outline: none;
+}
+#password:invalid, #confirm-password:invalid{
+  border-color: #f00;
+}
+.missmatch{
+  block-size: 1lh;
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+  color: #f00;
+}
+button{
+  margin: 1.5rem 0 1.5rem var(--inline-gap);
+  padding: 0.5rem 1.5rem;
+  background-color: #293214;
+  border: unset;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 3px #a9a9a9;
+  font-weight: bold;
+  font-size: inherit;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
