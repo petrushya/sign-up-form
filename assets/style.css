@@ -70,16 +70,19 @@ section div{
   align-items: start;
   margin-block-start: 1.5rem;
 }
+section div:last-child{
+  margin-block-end: 2rem;
+}
 label{
   font-variant: small-caps;
   letter-spacing: 0.2ch;
 }
 input{
-  display: border-box;
+  box-sizing: border-box;
   inline-size: 30ch;
   border: thin solid #000;
   border-radius: 0.25rem;
-  padding: 0.125rem;
+  padding: 0.125rem 0.25rem;
   font-size: inherit;
 }
 input:focus{
@@ -93,7 +96,7 @@ input:focus{
 .missmatch{
   block-size: 1lh;
   font-size: 0.9rem;
-  margin: 0.25rem 0;
+  margin-block-start: 0.125rem;
   color: #f00;
 }
 button{
