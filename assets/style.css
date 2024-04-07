@@ -67,6 +67,7 @@ section div:last-child{
   margin-block-end: 2rem;
 }
 label{
+  display: block;
   font-variant: small-caps;
   letter-spacing: 0.2ch;
 }
