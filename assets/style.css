@@ -10,13 +10,10 @@ body{
   margin: 0 auto;
   font-family: sans-serif;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
   background-color: #f5f5f5;
 }
 p{
-  margin: 0 0 1.5rem var(--inline-gap);
+  margin: 0 var(--inline-gap) 1.5rem var(--inline-gap);
 }
 a{
   text-decoration: unset;
@@ -25,7 +22,7 @@ a{
 }
 /*---*/
 .logo{
-  flex: 1 1 40ch;
+  flex: 1;
   align-self: stretch;
   background: url("mybg.jpg") center top / cover, #293214;
 }
@@ -47,13 +44,12 @@ a{
 }
 /*---*/
 .form{
-  flex: 2 1 80ch;
+  flex: 2;
+  align-self: center;
 }
 section{
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: start;
   column-gap: var(--inline-gap);
   padding: 1rem var(--inline-gap);
   background-color: #fff;
@@ -65,9 +61,7 @@ section h2, section p{
 }
 section div{
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: start;
+  flex-flow: column;
   margin-block-start: 1.5rem;
 }
 section div:last-child{
